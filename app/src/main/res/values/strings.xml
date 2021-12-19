@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hw5</string>
+    <string name="image_label">Tap to Add an Image</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="surname_hint">Surname</string>
+    <string name="name_hint">Name</string>
+    <string name="phone_type_content_label">phone type</string>
+    <string name="update_button_label">Update</string>
+</resources>
