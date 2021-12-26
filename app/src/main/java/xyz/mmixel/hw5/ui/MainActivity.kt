@@ -7,7 +7,7 @@ import xyz.mmixel.hw5.app.App
 import xyz.mmixel.hw5.model.Contact
 
 class MainActivity : AppCompatActivity(), ContactsFragment.ContactClickListener,
-    ContactDetailsFragment.ButtonClickListener {
+    ContactDetailsFragment.ClickListener {
     private var isTablet = false
 
     override fun onCreate(savedInstanceState: Bundle?) {

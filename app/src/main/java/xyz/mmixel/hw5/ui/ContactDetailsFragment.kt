@@ -13,11 +13,11 @@ import xyz.mmixel.hw5.model.Contact
 
 class ContactDetailsFragment : Fragment(R.layout.fragment_contact_details) {
     private lateinit var binding: FragmentContactDetailsBinding
-    private var buttonClickListener: ButtonClickListener? = null
+    private var buttonClickListener: ClickListener? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        buttonClickListener = context as ButtonClickListener
+        buttonClickListener = context as ClickListener
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
@@ -55,7 +55,7 @@ class ContactDetailsFragment : Fragment(R.layout.fragment_contact_details) {
 
     }
 
-    interface ButtonClickListener {
+    interface ClickListener {
         fun onUpdateButtonClicked(contact: Contact)
     }
 

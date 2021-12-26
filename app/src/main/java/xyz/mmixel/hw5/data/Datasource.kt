@@ -3,7 +3,7 @@ package xyz.mmixel.hw5.data
 import xyz.mmixel.hw5.model.Contact
 
 class Datasource {
-    private val contacts = listOf(
+    val contacts = listOf(
         Contact(
             0,
             "Jinny",
@@ -37,9 +37,6 @@ class Datasource {
             "hbellie3@tripod.com"
         )
     )
-    fun loadContacts(): List<Contact> {
-        return contacts
-    }
 
     fun updateContact(contact: Contact) {
         contacts.find { it.id == contact.id }?.apply {

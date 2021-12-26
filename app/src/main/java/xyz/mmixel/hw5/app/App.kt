@@ -13,7 +13,7 @@ class App : Application() {
     }
 
     fun contacts(): List<Contact> {
-        return dataSource.loadContacts()
+        return dataSource.contacts
     }
 
     fun updateContact(contact: Contact) {
